@@ -1,0 +1,16 @@
+name: Build Placeholder
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build message
+        run: echo "هنا سيكون بناء التطبيق لاحقاً"
